@@ -155,9 +155,13 @@ const coresAno = [
 
 document.addEventListener('keydown', function(e){
     if(e.code == 'ArrowLeft'){
-        voltarAno()
+        if(index != coresAno.length-1){
+            voltarAno()
+        }
     } else if(e.code == 'ArrowRight'){
-        avancarAno()
+        if(index != 0){
+            avancarAno()
+        }
 }});
 
 
