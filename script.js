@@ -8,6 +8,7 @@ const opacity = bodyAfter['opacity'];
 const ano = document.querySelector('.ano');
 const cor = document.querySelector('.cor');
 const hexadecimal = document.querySelector('.hexadecimal');
+const pantone = document.querySelector('.pantone');
 let index = 0;
 
 const coresAno = [
@@ -198,6 +199,7 @@ function mudarEstilo(){
     hexadecimal.innerHTML = coresAno[index].hexadecimal;
     ano.innerHTML = coresAno[index].ano;
     cor.innerHTML = coresAno[index].cor;
+    pantone.innerHTML = coresAno[index].pantone;
 }
 
 voltar.addEventListener('click', voltarAno);
